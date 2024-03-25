@@ -4,7 +4,7 @@ const PORT = 3000; // You can choose any available port
 
 // Define a route
 app.get('/', (req, res) => {
-    res.send('Hello, this is your API!');
+    res.send('Hello, this is your API LowGear!');
 });
 
 // Start the server
