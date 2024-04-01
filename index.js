@@ -4,7 +4,7 @@ const PORT = 3000; // You can choose any available port
 
 // Define a route
 app.get('/', (req, res) => {
-    res.send('Hello, this is your API LowGear!');
+    res.send('Hello, Welcome to LowGear\'s WEB SERVICE!!');
 });
 
 // Start the server
@@ -17,8 +17,6 @@ app.get('/api/data', (req, res) => {
     const data = { message: 'This is some data from your API!' };
     res.json(data);
 });
-
-
 
 
 //Run npm init -y in the terminal to create a package.json file with default values.
