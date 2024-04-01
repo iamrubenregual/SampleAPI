@@ -17,3 +17,9 @@ app.get('/api/data', (req, res) => {
     const data = { message: 'This is some data from your API!' };
     res.json(data);
 });
+
+
+
+
+//Run npm init -y in the terminal to create a package.json file with default values.
+//You'll need to install Express.js, a popular Node.js framework for building web applications. Run npm install express to install it.
