@@ -13,10 +13,21 @@ app.listen(PORT, () => {
 });
 
 // Define another route
-app.get('/api/data', (req, res) => {
-    const data = { message: 'This is some data from your API!' };
+app.get('/api/personalData', (req, res) => {
+    const personalData = {
+        "LastName": "Doe",
+        "FirstName": "John",
+        "MiddleName": "Michael",
+        "BirthDate": "1990-05-15",
+        "Gender": "Male",
+        "MobileNo": "+1234567890",
+        "Address": "123 Main Street, Cityville",
+        "EmailAddress": "johndoe@example.com"
+    };
+    const data = { message: '', personalData: personalData };
     res.json(data);
 });
+
 
 
 //Run npm init -y in the terminal to create a package.json file with default values.
