@@ -3,8 +3,8 @@ const app = express();
 const cors = require('cors');
 const PORT = 3000; // You can choose any available port
 
-// Middleware to set CORS headers
-app.use(cors({ origin: 'https://sampleapi-m73t.onrender.com' }));
+// Allow requests from 'https://lowgearpage.onrender.com'
+app.use(cors({ origin: 'https://lowgearpage.onrender.com' }));
 
 // Define a route
 app.get('/', (req, res) => {
