@@ -1,15 +1,10 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const PORT = 3000; // You can choose any available port
 
 // Middleware to set CORS headers
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://sampleapi-m73t.onrender.com');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
-});
+app.use(cors({ origin: 'https://sampleapi-m73t.onrender.com' }));
 
 // Define a route
 app.get('/', (req, res) => {
